@@ -21,7 +21,7 @@ public class Ejercicio1 {
 
         String textoFormateado = texto.toUpperCase().replace(" ", "_");
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/ejercicio1/formateado.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/ejercicio1/formateado1.txt"))) {
             writer.write(textoFormateado);
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
