@@ -13,15 +13,15 @@ public class Ejercicio2 {
 
         String textoFormateado = texto.toUpperCase().replace(" ", "_");
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/ejercico2/formateado.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/ejercico2/formateado2.txt"))) {
             writer.write(textoFormateado);
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
 
-        System.out.println("El texto formateado se ha guardado en src/ejercico2/formateado.txt");
+        System.out.println("El texto formateado se ha guardado en src/ejercico2/formateado2.txt");
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/ejercico2/formateado.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/ejercico2/formateado2.txt"))) {
             int caracteres;
             StringBuilder resultado = new StringBuilder();
             while ((caracteres = reader.read()) != -1) {
