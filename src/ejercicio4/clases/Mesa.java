@@ -1,6 +1,7 @@
 package ejercicio4.clases;
 import java.io.Serializable;
 public class Mesa implements Serializable{
+    
     private String color;
     private int numeroPatas;
 
