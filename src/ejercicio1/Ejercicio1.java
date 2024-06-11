@@ -28,5 +28,6 @@ public class Ejercicio1 {
         }
 
         System.out.println("El texto formateado se ha guardado en formateado.txt");
+        teclado.close();
     }
 }
