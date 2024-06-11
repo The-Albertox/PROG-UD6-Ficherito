@@ -21,7 +21,7 @@ public class ManegadorDeMesa {
     }
 
     public List<Mesa> obtenerTodasLasMesas() {
-        List<Mesa> mesas = new ArrayList<>();
+        List<Mesa> mesas = new ArrayList();
         File file = new File(FILE_PATH);
         if (file.exists()) {
             try (FileInputStream fis = new FileInputStream(FILE_PATH);

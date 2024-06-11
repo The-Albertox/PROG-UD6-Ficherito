@@ -22,6 +22,7 @@ public class Ejercicio2 {
         System.out.println("El texto formateado se ha guardado en src/ejercico2/formateado2.txt");
 
         try (BufferedReader reader = new BufferedReader(new FileReader("src/ejercico2/formateado2.txt"))) {
+            
             int caracteres;
             StringBuilder resultado = new StringBuilder();
             while ((caracteres = reader.read()) != -1) {
