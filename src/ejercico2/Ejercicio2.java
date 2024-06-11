@@ -34,5 +34,6 @@ public class Ejercicio2 {
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
+        teclado.close();
     }
 }
