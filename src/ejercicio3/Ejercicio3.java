@@ -9,7 +9,7 @@ public class Ejercicio3 {
                 BufferedReader reader1 = new BufferedReader(new FileReader("src/ejercicio1/formateado1.txt"));
                 BufferedReader reader2 = new BufferedReader(new FileReader("src/ejercico2/formateado2.txt"))) {
 
-            writer.write("Contenido del Fichero Uno:\n");
+            writer.write("Contenido del Fichero Uno:");
             String line;
             while ((line = reader1.readLine()) != null) {
                 writer.write(line);
@@ -17,14 +17,13 @@ public class Ejercicio3 {
             }
             writer.newLine();
 
-            writer.write("Contenido del Fichero Dos:\n");
+            writer.write("Contenido del Fichero Dos:");
             while ((line = reader2.readLine()) != null) {
                 writer.write(line);
                 writer.newLine();
             }
             writer.newLine();
 
-            // Añadir el mensaje de firma
             writer.write("Firmado por: Alberto");
             writer.newLine();
 
